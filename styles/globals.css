@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root {
+  --primary-color: #d3411f;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -15,7 +19,21 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +41,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */

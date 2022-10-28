@@ -1,0 +1,61 @@
+.deliveryPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.delivery {
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.delivery form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.delivery form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.delivery button {
+  padding: 5px 13px;
+  border-radius: 7px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  align-self: center;
+  background-color: teal;
+  border: 1px solid transparent;
+  margin-top: 20px;
+}
+
+.delivery button:hover {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid teal;
+  color: teal;
+  background-color: white;
+}

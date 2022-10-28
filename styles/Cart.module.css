@@ -1,0 +1,63 @@
+.head {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tBody th img {
+  width: 100px;
+}
+
+.tBody tr td:nth-child(2) {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.tBody tr td {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.tBody tr td:last-child {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.paymentMethodes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.paymentMethodes button {
+  text-transform: uppercase;
+  color: teal;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.paymentMethodes button:hover {
+  color: white;
+  background-color: teal;
+  transition: all 0.4s ease-in-out;
+}
+
+.checkoutBtn {
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: var(--primary-color);
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.checkoutBtn:hover {
+  color: white;
+  background-color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+}

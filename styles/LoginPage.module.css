@@ -1,0 +1,40 @@
+.loginPage {
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loginPage form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 450px;
+  max-width: 95vw;
+}
+
+.loginPage form input {
+  padding: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.loginPage form button {
+  width: 100%;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.loginPage form button:hover {
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+  transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,58 @@
+.paidBtn {
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #3a7e7d;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 5px;
+}
+
+/* .paidBtn:hover {
+  color: white;
+  background-color: #3a7e7d;
+  transition: all 0.4s ease-in-out;
+} */
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.undone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.statusImg {
+  width: 70px;
+}
+
+.checkedImg {
+  width: 40px;
+  height: 40px;
+}
+
+.undone .checkedImg,
+.inProgress .checkedImg {
+  opacity: 0;
+}

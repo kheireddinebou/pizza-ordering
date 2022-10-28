@@ -1,0 +1,13 @@
+.addBtn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+.addBtn:hover{
+    border-radius: 35px;
+    transition: all 0.2s ease-in-out;
+}

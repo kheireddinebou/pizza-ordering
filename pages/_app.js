@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import Layout from "../components/Layout";
+import { CartContextProvider } from "../context/CartContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <CartContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </CartContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
