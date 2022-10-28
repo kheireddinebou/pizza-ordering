@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import DeliveryForm from "../components/DeliveryForm";
 
-const cart = () => {
+const Cart = () => {
   const [open, setOpen] = useState(false);
   const [openCash, setOpenCash] = useState(false);
   const { products, total, dispatch } = useContext(CartContext);
@@ -186,4 +186,4 @@ const cart = () => {
   );
 };
 
-export default cart;
+export default Cart;
