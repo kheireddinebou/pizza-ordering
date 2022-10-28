@@ -23,23 +23,27 @@ const Navbar = () => {
         </div>
       </div>
 
-      <Link href="/">
-        <GiFullPizza
-          className="pointer"
-          style={{
-            color: "white",
-            fontSize: "60px",
-          }}
-        />
+      <Link href="/" passHref>
+        <a>
+          <GiFullPizza
+            className="pointer"
+            style={{
+              color: "white",
+              fontSize: "60px",
+            }}
+          />
+        </a>
       </Link>
 
       <div className="w-25 d-flex justify-content-center">
-        <Link href="/cart">
-          <button className={styles.badge}>
-            <AiOutlineShoppingCart />
-            <span>{quantity}</span>
-          </button>
-        </Link>
+        <a>
+          <Link href="/cart" passHref>
+            <button className={styles.badge}>
+              <AiOutlineShoppingCart />
+              <span>{quantity}</span>
+            </button>
+          </Link>
+        </a>
       </div>
     </div>
   );

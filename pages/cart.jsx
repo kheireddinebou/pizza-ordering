@@ -86,7 +86,6 @@ const cart = () => {
     );
   };
 
-  console.log(products);
 
   return (
     <div className="container" style={{ paddingTop: "90px" }}>
