@@ -14,7 +14,7 @@ export default async function handler(req, res) {
       const order = await Order.findById(id);
       res.status(200).json(order);
     } catch (error) {
-      res.status(500).json(error.response.data);
+      res.status(500).json(error);
     }
   }
 
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       });
       res.status(200).json(newOrder);
     } catch (error) {
-      res.status(500).json(error.response.data);
+      res.status(500).json(error);
     }
   }
 }
