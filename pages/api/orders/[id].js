@@ -1,5 +1,5 @@
 import Order from "../../../models/Order";
-import dbConnect from "../../../util/Mongodb.js";
+import dbConnect from "../../../util/mongodb";
 
 export default async function handler(req, res) {
   const {
@@ -22,7 +22,6 @@ export default async function handler(req, res) {
     try {
       const newOrder = await Order.findByIdAndUpdate(id, req.body, {
         new: true,
-
       });
       res.status(200).json(newOrder);
     } catch (error) {
