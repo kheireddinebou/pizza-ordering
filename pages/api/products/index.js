@@ -1,5 +1,5 @@
 import Product from "../../../models/Product";
-import dbConnect from "../../../util/mongoDb";
+import dbConnect from "../../../util/Mongodb";
 
 export default async function handler(req, res) {
   const { method } = req;
