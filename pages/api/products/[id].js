@@ -13,6 +13,8 @@ export default async function handler(req, res) {
   if (method === "GET") {
     try {
       const product = await Product.findById(id);
+      res.setHeader("Cache-Control", "s-maxage=10, stale-while-revalidate");
+
       res.status(200).json(product);
     } catch (error) {
       res.status(500).json(error);
@@ -33,6 +35,7 @@ export default async function handler(req, res) {
   if (method === "DELETE") {
     try {
       await Product.findByIdAndDelete(id);
+      res.setHeader("Cache-Control", "s-maxage=10, stale-while-revalidate");
       res.status(200).json("product has been deleted");
     } catch (error) {
       res.status(500).json(error);

@@ -12,6 +12,7 @@ export default async function handler(req, res) {
   if (method === "GET") {
     try {
       const order = await Order.findById(id);
+      res.setHeader("Cache-Control", "s-maxage=10, stale-while-revalidate");
       res.status(200).json(order);
     } catch (error) {
       res.status(500).json(error);
@@ -24,6 +25,8 @@ export default async function handler(req, res) {
         new: true,
       });
       res.status(200).json(newOrder);
+      res.setHeader("Cache-Control", "s-maxage=10, stale-while-revalidate");
+
     } catch (error) {
       res.status(500).json(error);
     }
