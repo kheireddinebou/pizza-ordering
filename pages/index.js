@@ -13,7 +13,7 @@ export default function Home({ pizzaList, admin }) {
       </Head>
 
       <Featured />
-      <PizzaList admin={admin}  pizzaList={pizzaList} />
+      <PizzaList admin={admin} pizzaList={pizzaList} />
     </div>
   );
 }
@@ -26,7 +26,7 @@ export const getServerSideProps = async ctx => {
     admin = true;
   }
 
-  const res = await axios.get("http://localhost:3000/api/products");
+  const res = await axios.get("https://pizza-ordering.vercel.app/api/products");
 
   return {
     props: {

@@ -11,10 +11,10 @@ const Login = () => {
 
   const handleLogin = async e => {
     e.preventDefault();
-   
+
     setError(false);
     try {
-      await axios.post("http://localhost:3000/api/login", {
+      await axios.post("https://pizza-ordering.vercel.app/api/login", {
         username: username.current.value,
         password: password.current.value,
       });

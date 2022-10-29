@@ -18,7 +18,10 @@ const Cart = () => {
 
   const createOrder = async data => {
     try {
-      const res = await axios.post("http://localhost:3000/api/orders", data);
+      const res = await axios.post(
+        "https://pizza-ordering.vercel.app/api/orders",
+        data
+      );
       router.push(`/orders/${res.data._id}`);
       dispatch({ type: "RESET" });
     } catch (error) {
@@ -85,7 +88,6 @@ const Cart = () => {
       </>
     );
   };
-
 
   return (
     <div className="container" style={{ paddingTop: "90px" }}>

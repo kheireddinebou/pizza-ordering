@@ -73,7 +73,7 @@ const AddProductForm = ({ setShowForm }) => {
     try {
       console.log(newForm);
       const res = await axios.post(
-        "http://localhost:3000/api/products",
+        "https://pizza-ordering.vercel.app/api/products",
         newForm
       );
 

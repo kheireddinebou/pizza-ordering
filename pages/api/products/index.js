@@ -11,7 +11,7 @@ export default async function handler(req, res) {
       const products = await Product.find();
       res.status(200).json(products);
     } catch (error) {
-      res.status(500).json(error.response);
+      res.status(500).json(error.response.data);
     }
   }
 
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       const newProduct = await Product.create(req.body);
       res.status(200).json(newProduct);
     } catch (error) {
-      res.status(500).json(error.response);
+      res.status(500).json(error.response.data);
     }
   }
 }
