@@ -1,5 +1,9 @@
 const handler = (req, res) => {
-  res.status(200).json("is work");
+  try {
+    res.status(200).json("work");
+  } catch (error) {
+    res.status(500).json(error.response.data);
+  }
 };
 
 export default handler;
